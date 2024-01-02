@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vision</title>
+    <link rel="icon" href="logomseuf.ico" type="image/icon type">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-image: url("mseuflogorep2.png");
+            background-repeat: repeat-y, x;
+            background-size: 50%;
+            background-position: 10 4px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            opacity: 0;
+            animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+            text-align: center;
+        }
+
+        @keyframes reveal {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #top-left-button {
+            opacity: 1; /* Avoid animation on initial display */
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 10px;
+            background-color: #8f0000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        #top-left-button:hover {
+            background-color: #6d0000;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <button id="top-left-button" onclick="window.location.href='MSEUFCI.html'">Home</button>
+
+    <div class="container">
+        OUR MISSION:<br /><br />
+        The University is a private non-stock non-profit non-sectarian 
+        educational foundation with a three-fold function - instruction, research, 
+        and community service - offering responsive and alternative programs 
+        supportive of national development and standards of global excellence.
+    </div>
+
+    <div class="container">
+        Education. Empowerment. Excellence
+    </div>
+</body>
+</html>
